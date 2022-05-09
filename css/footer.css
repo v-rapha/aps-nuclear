@@ -1,6 +1,6 @@
 footer {
   margin-top: auto;
-  background: #23232e;
+  background: var(--bg-primary);
   min-height: 130px;
   height: 130px;
   margin-top: 20px;
@@ -15,6 +15,14 @@ footer {
 
 .footer-wrapper__logo {
   color: #fff;
+}
+
+.footer-wrapper__logo img {
+  width: 200px;
+}
+
+.footer-wrapper__logo p {
+  text-align: center;
 }
 
 .footer-wrapper__nav {

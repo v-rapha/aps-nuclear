@@ -9,6 +9,10 @@
   font-family: sans-serif;
 }
 
+:root {
+  --bg-primary: #031927
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;

@@ -2,6 +2,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 5;
+  padding: 20px 0;
+  background: var(--bg-primary);
 }
 
 a {
@@ -15,17 +17,22 @@ a:hover {
 }
 
 .logo {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  width: 50px;
+}
+
+.logo img {
+  width: 200px;
 }
 
 .nav-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #23232e;
   height: 8vh;
+}
+
+.nav-header a {
+  display: inline-block;
 }
 
 .nav-list {
@@ -54,6 +61,11 @@ a:hover {
 @media (max-width: 767px) {
   body {
     overflow-x: hidden;
+  }
+
+  .nav-header {
+    justify-content: space-between;
+    padding: 10px;
   }
 
   .nav-list {
