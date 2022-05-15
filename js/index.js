@@ -1,6 +1,6 @@
 const mobileMenu = document.querySelector('.mobile-menu');
-const navList = document.querySelector('.nav-list');
-const navLinks = document.querySelectorAll('.nav-list li');
+const navList = document.querySelector('.navbar__list');
+const navLinks = document.querySelectorAll('.navbar__list li');
 
 function animateLinks() {
   navLinks.forEach((link, index) => {
@@ -8,7 +8,7 @@ function animateLinks() {
 
     link.style.animation
       ? (link.style.animation = '')
-      : (link.style.animation = `navLinkFade 0.5s ease forwards ${milis}s`);
+      : (link.style.animation = `navLinkFade 0.2s ease forwards ${milis}s`);
   });
 }
 
