@@ -44,7 +44,7 @@
   content: '';
   width: 10px;
   height: 10px;
-  background: #3DC2CF;
+  background: #3dc2cf;
   border-radius: 50%;
   display: block;
   float: left;
@@ -54,13 +54,13 @@
 .typography a {
   color: #031927;
   text-decoration: underline;
-  text-decoration-color: #3DC2CF;
+  text-decoration-color: #3dc2cf;
   transition: color 0.25s, background 0.25s;
 }
 
 .typography a:hover {
-  color: #3DC2CF;
-  text-decoration-color: #3DC2CF;
+  color: #3dc2cf;
+  text-decoration-color: #3dc2cf;
 }
 
 /* .typography .cta-block__link {
@@ -95,4 +95,25 @@
   transition: transform 0.25s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   will-change: transform;
+}
+
+@media (max-width: 992px) {
+  .main-content__inner {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .typography h2 {
+    font-size: 26px;
+  }
+
+  .typography p {
+    font-size: 16px;
+  }
+
+  .typography ul li {
+    font-size: 16px;
+  }
 }

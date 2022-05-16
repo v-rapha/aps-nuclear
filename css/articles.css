@@ -1,83 +1,178 @@
-.card {
-  width: 100%;
-  max-width: 980px;
-  padding: 50px;
-  background-color: #fff;
-  box-shadow: 0 14px 80px rgba(0, 0, 0, 0.2);
+.section-row {
+  width: 1200px;
   display: flex;
-  align-items: center;
-  border-radius: 8px;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.card__img {
-  min-width: 350px;
-  max-width: 350px;
-  height: 300px;
-  transform: translateX(-80px);
-  position: relative;
+.topic__inner {
+  display: flex;
+  padding: 0 30px 30px 30px;
 }
 
-.card__img img {
+.topic__header {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 60px;
+  align-content: space-between;
+}
+
+.topic__label {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 9px 18px 8px;
+  background: var(--bg-secondary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  border-radius: 2px;
+  letter-spacing: 2.3px;
+  text-align: center;
+}
+
+.topic__caption {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.57143;
+  margin: 0 0 6px;
 }
 
-.card__date span {
+.topic__link {
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #eef0f4;
+  padding-top: 23px;
+  padding-bottom: 0;
+  color: #031927;
   display: block;
-  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  transition: color 0.25s;
+}
+
+.topic__link:focus .topic__link--icon,
+.topic__link:hover .topic__link--icon {
+  transform: translate3d(5px, 0, 0);
+}
+
+.topic__link:focus,
+.topic__link:hover {
+  color: var(--color-icon);
+}
+
+.topic__link--label {
+  font-weight: 800;
+  display: inline-block;
+  margin-right: 5px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  letter-spacing: 2.5px;
   font-size: 16px;
-  font-weight: 600;
-  margin: 5px 0;
 }
 
-.card__title {
-  font-size: 25px;
-  margin: 15px 0 20px;
-  text-transform: uppercase;
-  color: #24292e;
+.topic__link--icon {
+  color: var(--color-icon);
+  font-size: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: transform;
 }
 
-.card__description {
-  margin-bottom: 30px;
-  line-height: 28px;
-  font-size: 24px;
-  letter-spacing: 1px;
-  color: rgba(0, 0, 0, 0.7);
+.topic__figure {
+  width: 60%;
+  align-self: center;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 25%);
+  transform: scale3d(1, 1, 1);
+  transition: box-shadow 0.25s, transform 0.25s, -webkit-box-shadow 0.25s,
+    -webkit-transform 0.25s;
+  will-change: box-shadow, transform;
 }
 
-.card__cta {
-  /* display: inline-block; */
+.topic__figure figcaption {
+  position: absolute;
+  z-index: 5;
+  color: #031927;
   float: right;
-  /* padding: 15px 30px; */
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 600;
-  color: #24292e;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  padding: 5px;
+  opacity: 0.8;
 }
 
-@media screen and (max-width: 868px) {
-  .card {
-    max-width: 700px;
+.topic__image {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.topic {
+  margin: 120px 0;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .section-row {
+    width: 720px;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .card {
-    padding: 25px;
+  .topic__inner {
+    border: 1px solid #1290de5e;
     flex-direction: column;
   }
 
-  .card__img {
-    transform: translateX(0);
+  .topic__header {
+    width: 100%;
+    padding-top: 0;
+    padding-right: 0;
   }
 
-  .card__img img {
-    width: auto;
-    margin: auto;
+  .topic__header--details {
+    text-align: center;
+  }
+
+  .topic__caption {
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .topic__link {
+    border: none;
+  }
+
+  .topic__link--label {
+    font-size: 12px;
+  }
+
+  .topic__image {
+    display: none;
+  }
+
+  .topic__link::after {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, #0a4e78 13%, #1290de 54%, #169cd6 89%);
+    content: '';
+    display: block;
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-row {
+    width: calc(100% - 40px);
   }
 }

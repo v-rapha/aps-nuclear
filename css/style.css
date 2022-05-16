@@ -12,6 +12,8 @@
 
 :root {
   --bg-primary: #031927;
+  --bg-secondary: #042438;
+  --color-icon: #14a0f7;
 }
 
 html {
@@ -36,18 +38,4 @@ body {
 
 section {
   margin: 0 auto;
-}
-
-@media screen and (max-width: 840px) {
-  .panel__description {
-    bottom: 50%;
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .panel__description {
-    /* bottom: 50%; */
-    width: 90%;
-  }
 }
