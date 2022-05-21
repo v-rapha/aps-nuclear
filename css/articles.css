@@ -124,6 +124,10 @@
   width: 100%;
 }
 
+.topic:last-child .topic__label {
+  background: #F79814;
+}
+
 @media (max-width: 992px) {
   .section-row {
     width: 720px;
