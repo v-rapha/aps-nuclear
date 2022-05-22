@@ -1,5 +1,5 @@
 .panel__wrapper {
-  background: #2F5D7A;
+  background: #2f5d7a;
   min-height: 290px;
 }
 
@@ -27,14 +27,15 @@
 }
 
 .comment-box p {
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   color: #fff;
   background: var(--bg-secondary);
   padding: 10px;
 }
 
-.comment-form input, .comment-form textarea {
+.comment-form input,
+.comment-form textarea {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -48,17 +49,18 @@
 .comment-form button {
   margin: 10px 0;
   border: none;
-  background-color: #d0d0d0;
+  background-color: var(--color-icon);
   padding: 10px;
   font-size: 18px;
   border-radius: 2px;
-  color: #444;
+  color: #fff;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 .comment-form button:hover {
   color: #fff;
-  background-color: #444;
+  background-color: #1070b1;
 }
 
 @media (max-width: 900px) {

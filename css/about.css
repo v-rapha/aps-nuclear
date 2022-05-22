@@ -77,6 +77,10 @@
   text-decoration: none;
 }
 
+.typography span {
+  font-weight: 600;
+}
+
 .cta-block__link__inner {
   display: flex;
   align-items: center;
@@ -90,11 +94,11 @@
   text-transform: uppercase;
 }
 
-.cta-block__link .icon {
+.cta-block__link i {
   margin-left: 8px;
-  transition: transform 0.25s;
+  /* transition: transform 0.25s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  will-change: transform;
+  will-change: transform; */
 }
 
 @media (max-width: 992px) {

@@ -125,7 +125,7 @@
 }
 
 .topic:last-child .topic__label {
-  background: #F79814;
+  background: #f79814;
 }
 
 @media (max-width: 992px) {
