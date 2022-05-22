@@ -28,13 +28,13 @@ body {
 }
 
 .panel__background {
-  background-image: url('../images/pexels-nuclear.jpg');
+  background-image: url('../images/nuclear-power-plant-g40289690e_1280.jpg');
   background-attachment: fixed;
 }
 
-.panel__description--row {
+/* .panel__description--row {
   color: var(--bg-primary);
-}
+} */
 
 section {
   margin: 0 auto;

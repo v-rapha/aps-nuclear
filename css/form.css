@@ -64,8 +64,14 @@
 }
 
 @media (max-width: 900px) {
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+  }
+
   .comment-box {
     width: calc(80% - 20px);
-    margin: 5%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

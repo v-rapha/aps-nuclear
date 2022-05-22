@@ -64,6 +64,20 @@
 
 @media (max-width: 625px) {
   .panel__description {
-    bottom: 22%;
+    bottom: 28%;
+  }
+}
+
+@media (max-width: 540px) {
+  .panel__description--row {
+    justify-content: center;
+  }
+
+  .panel__description--row h2 {
+    font-size: 30px;
+  }
+
+  .panel__description--row p {
+    font-size: 22px;
   }
 }

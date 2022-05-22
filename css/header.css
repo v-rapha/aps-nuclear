@@ -147,6 +147,19 @@ header .navbar ul {
   }
 }
 
+@media (max-width: 540px) {
+  .navbar__list {
+    top: 18vh;
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .navbar__list li a {
+    font-size: 14px;
+    padding: 14px 0;
+  }
+}
+
 .navbar__list.active {
   transform: translateX(0);
 }
